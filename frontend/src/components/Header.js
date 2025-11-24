@@ -61,9 +61,9 @@ const Header = () => {
                 </Link>
             </div>
 
-          <div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow pl-2'>
+          {/* RESOLVED CODE with both functionality*/}
+          <div className='hidden lg:flex items-center w-full justify-between max-w-md border-2 border-red-200 rounded-full focus-within:shadow pl-2'>
               <input type='text' placeholder='search product here...' className='w-full outline-none' onChange={handleSearch} value={search}/>
-              {/* Added onClick handler and cursor-pointer */}
               <div className='text-lg min-w-[50px] h-8 bg-red-600 flex items-center justify-center rounded-r-full text-white cursor-pointer' onClick={()=>navigate(`/search?q=${search}`)}>
                 <GrSearch />
               </div>
